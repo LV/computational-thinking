@@ -4,7 +4,6 @@ Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](h
 ---
 
 ## 🖼️ PART 1 Foundations – Images, Data, Abstraction
-- [ ] 2020 Lecture 1 **Images and Abstraction** *(Grant section, intuition, optional ≃ 35 min)*
 - [ ] 2024 Module 1.1 **Images as Data and Arrays**
 - [ ] 💪 **Homework 1 – Arrays & Images**
 - [ ] 2024 Module 1.2 **Abstraction**
