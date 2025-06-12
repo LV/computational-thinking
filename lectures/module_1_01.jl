@@ -230,6 +230,9 @@ press the camera to capture an image. Kind of fun to keep pressing the button as
 	myface1[end:-1:1, :] myface1[end:-1:1, end:-1:1]
 ]
 
+# ╔═╡ 77cb953a-9005-4993-b07f-fb911113b439
+luis = load("../assets/fourface.png")
+
 # ╔═╡ cef1a95a-64c6-11eb-15e7-636a3621d727
 md"""
 ## Inspecting your data
@@ -1569,6 +1572,7 @@ version = "17.4.0+2"
 # ╟─e94dcc62-6d4e-11eb-3d53-ff9878f0091e
 # ╠═bd0e4cfc-72bb-43c1-8178-63872f859fab
 # ╠═6224c74b-8915-4983-abf0-30e6ba04a46d
+# ╠═77cb953a-9005-4993-b07f-fb911113b439
 # ╟─cef1a95a-64c6-11eb-15e7-636a3621d727
 # ╟─f26d9326-64c6-11eb-1166-5d82586422ed
 # ╟─6f928b30-602c-11eb-1033-71d442feff93
