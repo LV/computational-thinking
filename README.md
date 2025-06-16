@@ -1,9 +1,24 @@
-# 🧠 MIT Computational Thinking - 2020 + 2024 Curriculums
-
+# 🧠 MIT Computational Thinking
 Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](https://computationalthinking.mit.edu/Fall24/)
----
 
-## 🖼️ PART 1 Foundations – Images, Data, Abstraction
+## Pre-requisites
+- `julia`
+
+## Installing Pluto Notebooks
+```sh
+julia> import Pkg
+julia> Pkg.instantiate()
+julia> ]
+(@v1.11) pkg> add Pluto
+```
+
+## Running Pluto
+```sh
+julia> import Pluto; Pluto.run()
+```
+
+## Syllabus
+### 🖼️ PART 1 Foundations – Images, Data, Abstraction
 - [ ] 2024 Module 1.1 **Images as Data and Arrays**
 - [ ] 💪 **Homework 1 – Arrays & Images**
 - [ ] 2024 Module 1.2 **Abstraction**
@@ -16,7 +31,7 @@ Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](h
 
 ---
 
-## 🧩 PART 2 Dynamic Programming, Structure & Code Design
+### 🧩 PART 2 Dynamic Programming, Structure & Code Design
 - [ ] 2024 Module 1.7 **Dynamic Programming**
 - [ ] 2024 Module 1.8 **Seam Carving**
 - [ ] 2020 Lecture 4 **Live Coding Seam Carving** *(Grant, alternative implementation pattern, optional)*
@@ -27,7 +42,7 @@ Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](h
 
 ---
 
-## 🎲 PART 3 Probability, Simulation & Randomness
+### 🎲 PART 3 Probability, Simulation & Randomness
 - [ ] 2020 Lecture 6 **Understanding Data**
 - [ ] 2020 Lecture 7 **Introspection, COVID Data Visualization**
 - [ ] 2024 Module 2.1 **Principal Component Analysis**
@@ -42,7 +57,7 @@ Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](h
 
 ---
 
-## 🧬 PART 4 Epidemics, Networks & Optimization
+### 🧬 PART 4 Epidemics, Networks & Optimization
 - [ ] 2024 Module 2.7 **Discrete and Continuous**
 - [ ] 2024 Module 2.8 **Linear Model, Data Science, and Simulations**
 - [ ] 2024 Module 2.9 **Optimization**
@@ -57,7 +72,7 @@ Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](h
 
 ---
 
-## 🕶️ PART 5 Ray Tracing & Visual Computing
+### 🕶️ PART 5 Ray Tracing & Visual Computing
 - [ ] 2020 Lecture 19 **Floating-Point Arithmetic**
 - [ ] 2020 Lecture 14 **Ray Tracing, Your Own Parallelism, Abstract Arrays**
 - [ ] 2020 Lecture 15 **Billiard Model and Event-driven Simulation**
@@ -69,7 +84,7 @@ Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](h
 
 ---
 
-## 🌍 PART 6 Climate Modeling, PDEs & Hysteresis
+### 🌍 PART 6 Climate Modeling, PDEs & Hysteresis
 - [ ] 2024 Module 3.1 **Time Stepping**
 - [ ] 2024 Module 3.2 **ODEs and Parametrized Types**
 - [ ] 2024 Module 3.3 **Why We Can’t Predict Weather**
@@ -89,12 +104,12 @@ Links: [Fall 2020](https://computationalthinking.mit.edu/Fall20/), [Fall 2024](h
 
 ---
 
-## 📈 PART 7 Climate Economics & Inverse Problems
+### 📈 PART 7 Climate Economics & Inverse Problems
 - [ ] 2024 Module 3.10 **Climate Economics**
 - [ ] 2024 Module 3.11 **Solving Inverse Problems**
 - [ ] 💪 **2020 HW 10 – Climate Modeling II** *(advanced, optional)*
 
 ---
 
-## 🌀 PART 8 Bonus Conceptual Explorations
+### 🌀 PART 8 Bonus Conceptual Explorations
 - [ ] 2020 Lecture 26 **Discrete Fourier Transform**
