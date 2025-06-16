@@ -20,7 +20,7 @@ julia> import Pluto; Pluto.run()
 
 ## Syllabus
 ### 🖼️ PART 1 Foundations – Images, Data, Abstraction
-- [ ] 2024 Module 1.1 **Images as Data and Arrays**
+- [X] 2024 Module 1.1 **Images as Data and Arrays**
 - [ ] 💪 **Homework 1 – Arrays & Images**
 - [ ] 2024 Module 1.2 **Abstraction**
 - [ ] 2024 Module 1.3 **Automatic Differentiation**
