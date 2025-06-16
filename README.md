@@ -13,6 +13,7 @@ julia> ]
 ```
 
 ## Running Pluto
+Recommended to use `tmux` or something that can make the notebook resiliant from the shell window.
 ```sh
 julia> import Pluto; Pluto.run()
 ```
