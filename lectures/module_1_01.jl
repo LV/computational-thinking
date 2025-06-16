@@ -102,6 +102,20 @@ md"""
 > Think of another two examples in each category. Can you think of other categories of data?
 """
 
+# ╔═╡ aec68a48-a83e-4f3b-923d-4f4756fc198a
+md"""
+##### My Answer:
+- Time series:
+  - Overview of global download count for your Minecraft world
+  - Global population counter
+- Video:
+  - CCTV security footage
+  - A football game for ML analysis
+- Images:
+  - Telescope photos in a repeated sequence of time to track movements astronomical bodies
+  - Pictures of multiple lava lamps for secure random number generation
+"""
+
 # ╔═╡ 8691e434-6bc4-11eb-07d1-8169158484e6
 md"""
 Computational science can be summed up by a simplified workflow:
@@ -209,6 +223,17 @@ Poor Philip will undergo quite a few transformations as we go along!
 md"""
 👉 **Exercise:** change the url to use another image from the web.
 """
+
+# ╔═╡ f9dd7e26-2fb3-4538-a4d0-60bf9e8c9700
+md"""
+##### My Answer:
+"""
+
+# ╔═╡ d1b4c492-bd2f-427d-862d-e2d9f8f39dde
+meme = download("https://upload.wikimedia.org/wikipedia/en/9/96/Meme_Man_on_transparent_background.webp")
+
+# ╔═╡ 4098730b-3fb9-4663-a6b5-97553328ff20
+load(meme)
 
 # ╔═╡ efef3a32-6bc9-11eb-17e9-dd2171be9c21
 md"""
@@ -410,6 +435,11 @@ md"""
 👉 Write a function `invert` that inverts a color, i.e. sends $(r, g, b)$ to $(1 - r, 1-g, 1-b)$.
 """
 
+# ╔═╡ 770c89b9-97c3-4081-90dc-38dd2fad07cc
+md"""
+##### My Answer:
+"""
+
 # ╔═╡ 63e8d636-ee0b-11ea-173d-bd3327347d55
 function invert(color::AbstractRGB)
 	return RGB(1-color.r, 1-color.g, 1-color.b)
@@ -502,6 +532,11 @@ md"""
 👉 Generate a vector of 100 zeros. Change the center 20 elements to 1.
 """
 
+# ╔═╡ 2a8498db-1e7f-4918-868f-241cd1b71b81
+md"""
+##### My Answer:
+"""
+
 # ╔═╡ b6b65b94-edf0-11ea-3686-fbff0ff53d08
 function create_bar()
 	array = collect(1:100)
@@ -550,6 +585,13 @@ Note that the resulting image doesn't look very good, since we seem to have lost
 #### Exercise
 
 > Think about what we might do to reduce the size of an image without losing so much detail.
+"""
+
+# ╔═╡ 877bb373-baa6-4835-b9fc-8fa2cd84ee7b
+md"""
+##### My Answer:
+
+Instead of grabbing every 10th pixel, I would take the average color of those pixles (by averaging out their red, green, and blue components) and displaying that instead. This can have very weird edge cases though as it can produce pixels who's colors do not exist in the image (e.g. compressing the Yin Yang would yield the color grey despite it not existing).
 """
 
 # ╔═╡ 7b04331a-6bcb-11eb-34fa-1f5b151e5510
@@ -727,6 +769,25 @@ md"""
 
 > Make three sliders with variables `r`, `g` and `b`. Then make a single color patch with the RGB color given by those values.
 """
+
+# ╔═╡ 9740d9bc-86be-45e4-9010-0ec7d1aa99c5
+md"""
+##### My Answer:
+
+Sliders in the order: (Red, Green, Blue)
+"""
+
+# ╔═╡ 7a3fbba7-2fa5-423a-a751-962759799177
+@bind r_slider Slider(0:0.01:1, show_value=true)
+
+# ╔═╡ a7f3ce0f-bd49-46e8-bf1c-2ef8374e743b
+@bind g_slider Slider(0:0.01:1, show_value=true)
+
+# ╔═╡ 9da71964-9759-4997-ac5a-1c0a8149f23b
+@bind b_slider Slider(0:0.01:1, show_value=true)
+
+# ╔═╡ 53af448d-db21-439b-8d3b-5c1cbfb0f2d5
+RGB(r_slider, g_slider, b_slider)
 
 # ╔═╡ 576d5e3a-64d8-11eb-10c9-876be31f7830
 md"""
@@ -1550,6 +1611,7 @@ version = "17.4.0+2"
 # ╟─9111db10-6bc3-11eb-38e5-cf3f58536914
 # ╟─fb8a99ac-6bc1-11eb-0835-3146734a1c99
 # ╟─b795dcb4-6bc3-11eb-20ec-db2cc4b89bfb
+# ╟─aec68a48-a83e-4f3b-923d-4f4756fc198a
 # ╟─8691e434-6bc4-11eb-07d1-8169158484e6
 # ╟─546db74c-6d4e-11eb-2e27-f5bed9dbd9ba
 # ╟─6385d174-6d4e-11eb-093b-6f6fafb79f84
@@ -1568,6 +1630,9 @@ version = "17.4.0+2"
 # ╟─e86ed944-ee05-11ea-3e0f-d70fc73b789c
 # ╟─c99d2aa8-601e-11eb-3469-497a246db17c
 # ╟─11dff4ce-6bca-11eb-1056-c1345c796ed4
+# ╟─f9dd7e26-2fb3-4538-a4d0-60bf9e8c9700
+# ╠═d1b4c492-bd2f-427d-862d-e2d9f8f39dde
+# ╠═4098730b-3fb9-4663-a6b5-97553328ff20
 # ╟─efef3a32-6bc9-11eb-17e9-dd2171be9c21
 # ╟─e94dcc62-6d4e-11eb-3d53-ff9878f0091e
 # ╠═bd0e4cfc-72bb-43c1-8178-63872f859fab
@@ -1610,6 +1675,7 @@ version = "17.4.0+2"
 # ╟─c2907d1a-47b1-4634-8669-a68022706861
 # ╠═ff9eea3f-cab0-4030-8337-f519b94316c5
 # ╟─f6cc03a0-ee07-11ea-17d8-013991514d42
+# ╟─770c89b9-97c3-4081-90dc-38dd2fad07cc
 # ╠═63e8d636-ee0b-11ea-173d-bd3327347d55
 # ╟─2cc2f84e-ee0d-11ea-373b-e7ad3204bb00
 # ╟─b8f26960-ee0a-11ea-05b9-3f4bc1099050
@@ -1628,6 +1694,7 @@ version = "17.4.0+2"
 # ╟─2808339c-64cc-11eb-21d1-c76a9854aa5b
 # ╠═1bd53326-d705-4d1a-bf8f-5d7f2a4e696f
 # ╟─a5f8bafe-edf0-11ea-0da3-3330861ae43a
+# ╟─2a8498db-1e7f-4918-868f-241cd1b71b81
 # ╠═b6b65b94-edf0-11ea-3686-fbff0ff53d08
 # ╟─d862fb16-edf1-11ea-36ec-615d521e6bc0
 # ╟─e3394c8a-edf0-11ea-1bb8-619f7abb6881
@@ -1635,6 +1702,7 @@ version = "17.4.0+2"
 # ╟─6361d102-64cc-11eb-31b7-fb631b632040
 # ╠═ae542fe4-64cc-11eb-29fc-73b7a66314a9
 # ╟─c29292b8-64cc-11eb-28db-b52c46e865e6
+# ╟─877bb373-baa6-4835-b9fc-8fa2cd84ee7b
 # ╟─7b04331a-6bcb-11eb-34fa-1f5b151e5510
 # ╟─5319c03c-64cc-11eb-0743-a1612476e2d3
 # ╠═3db09d92-64cc-11eb-0333-45193c0fd1fe
@@ -1664,6 +1732,11 @@ version = "17.4.0+2"
 # ╟─1c539b02-64d8-11eb-3505-c9288357d139
 # ╟─10f6e6da-64d8-11eb-366f-11f16e73043b
 # ╟─82a8314c-64d8-11eb-1acb-e33625381178
+# ╟─9740d9bc-86be-45e4-9010-0ec7d1aa99c5
+# ╟─7a3fbba7-2fa5-423a-a751-962759799177
+# ╟─a7f3ce0f-bd49-46e8-bf1c-2ef8374e743b
+# ╟─9da71964-9759-4997-ac5a-1c0a8149f23b
+# ╠═53af448d-db21-439b-8d3b-5c1cbfb0f2d5
 # ╟─576d5e3a-64d8-11eb-10c9-876be31f7830
 # ╟─ace86c8a-60ee-11eb-34ef-93c54abc7b1a
 # ╟─b08e57e4-60ee-11eb-0e1a-2f49c496668b
