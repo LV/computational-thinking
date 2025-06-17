@@ -95,12 +95,12 @@ julia> import Pluto; Pluto.run()
 - [ ] 2024 Module 3.6 **Snowball Earth and Hysteresis**
 - [ ] 2020 Lecture 21 **Nonlinear Climate Dynamics and Snowball Earth** *(optional, richer geophysical narrative)*
 - [ ] 2024 Module 3.7 **Advection and Diffusion in 1D**
+- [ ] 2020 Lecture 22 **Diffusion Equation and Time and Space Evolution** (Good PDE intuition not in 2024)
 - [ ] 💪 **Homework 10 – Climate Modeling I**
 - [ ] 2024 Module 3.8 **Resistors, Stencils, and Climate Models**
 - [ ] 2024 Module 3.9 **Advection and Diffusion in 2D**
 - [ ] 2020 Lecture 18 **Hierarchical Thinking, Greedy Algorithms, Jacobi's Method, and Multigrid**
 - [ ] 🌟 **Mini-Project – 1D Multigrid Solver**
-- [ ] 2020 Lecture 22 **Diffusion Equation and Time and Space Evolution** (Good PDE intuition not in 2024)
 - [ ] 2020 Lecture 23 **Heat Transfer by Ocean Currents** (comes up after 3.9)
 
 ---
